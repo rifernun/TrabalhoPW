@@ -1,0 +1,16 @@
+input {
+  appearance: none !important;
+}
+.inputClass {
+  appearance: none;
+  border: 1px solid gray;
+  color: #272727;
+  padding: 0.6rem;
+  border-radius: 10px;
+  transition: all 0.2s ease-in-out;
+  outline: none;
+}
+
+.inputClass:focus {
+  border: 1px solid #202020;
+}

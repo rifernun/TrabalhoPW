@@ -1,0 +1,17 @@
+.btn {
+  appearance: none;
+  border: 0;
+  padding: 0.8rem;
+  color: #252525;
+  background-color: #59ac77;
+  font-size: 1rem;
+  font-weight: 600;
+  font-weight: bold;
+  color: aliceblue;
+  cursor: pointer;
+  border-radius: 15px;
+  transition: all 0.2s ease-in-out;
+}
+.btn:hover {
+  filter: brightness(80%);
+}
