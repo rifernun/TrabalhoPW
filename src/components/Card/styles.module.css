@@ -5,16 +5,57 @@
   align-content: center;
   text-align: center;
   gap: 0.8rem;
-  background-color: #f3f9ff;
-  border-radius: 15px;
-  padding: 5rem;
-  box-shadow: 0 0 10px 1px #8d8d8d;
-  height: 25vh;
+  background-color: #fff;
+  border-radius: 5px;
+  width: 20vw;
+  padding: 2rem;
+  min-width: 20vw;
+  min-height: 25vh;
+  animation-name: appearIndex;
+  animation-duration: 0.8s;
 }
 
 .cardBody {
   display: flex;
   flex-direction: column;
 }
-/* .cardBottom { */
-/* } */
+.cardResults {
+  text-align: left;
+  animation-name: appear;
+  animation-duration: 1s;
+}
+
+.cardResults h3 {
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+.cardResults h2 {
+  font-weight: 400;
+}
+
+@media (max-width: 768px) {
+  .card {
+    min-width: 60vw;
+  }
+}
+
+@keyframes appear {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes appearIndex {
+  from {
+    transform: translateY(50px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}

@@ -7,9 +7,11 @@ type InputFormProps = {
 
 export function InputForm({ label, id, type, ...rest }: InputFormProps) {
   return (
-    <>
-      <label htmlFor={id}>{label}</label>
+    <div className={styles.cardComponent}>
+      <label className={styles.labelInput} htmlFor={id}>
+        {label}
+      </label>
       <input id={id} className={styles.inputClass} type={type} {...rest} />
-    </>
+    </div>
   );
 }

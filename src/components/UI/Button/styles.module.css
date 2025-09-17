@@ -3,15 +3,27 @@
   border: 0;
   padding: 0.8rem;
   color: #252525;
-  background-color: #59ac77;
+  background-color: #e85b81;
   font-size: 1rem;
   font-weight: 600;
   font-weight: bold;
   color: aliceblue;
   cursor: pointer;
-  border-radius: 15px;
-  transition: all 0.2s ease-in-out;
+  width: 100%;
+  margin-top: 0.8rem;
+  border-radius: 5px;
+  transition: background-color 0.2s ease-in-out, transform 0.1s ease-in-out;
 }
 .btn:hover {
-  filter: brightness(80%);
+  background-color: #c74d6e;
+}
+
+.btn:active {
+  transform: scale(0.98);
+}
+
+.btn:disabled {
+  background-color: gray;
+  pointer-events: none;
+  user-select: none;
 }

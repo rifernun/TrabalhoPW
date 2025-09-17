@@ -6,11 +6,22 @@ input {
   border: 1px solid gray;
   color: #272727;
   padding: 0.6rem;
-  border-radius: 10px;
+  border-radius: 5px;
   transition: all 0.2s ease-in-out;
   outline: none;
 }
 
 .inputClass:focus {
-  border: 1px solid #202020;
+  border: 1px solid #e85b81;
+}
+
+.labelInput {
+  font-weight: 400;
+  font-size: 1.2rem;
+  text-align: left;
+}
+
+.cardComponent {
+  display: flex;
+  flex-direction: column;
 }

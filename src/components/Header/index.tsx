@@ -1,14 +1,12 @@
 import styles from "./styles.module.css";
 
-type HeaderProps = {
-  children: React.ReactNode;
-};
-
-export function Header({ children }: HeaderProps) {
+export function Header() {
   return (
     <>
       <div className={styles.header}>
-        <h3>{children}</h3>
+        <h3>
+          Cálculo de <span>IMC</span>
+        </h3>
       </div>
     </>
   );
