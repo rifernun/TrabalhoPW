@@ -8,7 +8,7 @@
   background: rgba(255, 255, 255, 0.15);
   backdrop-filter: blur(15px);
   -webkit-backdrop-filter: blur(15px);
-  border-radius: 5px;
+  border-radius: 15px;
   width: 20vw;
   padding: 2rem;
   min-width: 20vw;
@@ -23,20 +23,6 @@
 .cardBody {
   display: flex;
   flex-direction: column;
-}
-.cardResults {
-  text-align: left;
-  animation-name: appear;
-  animation-duration: 1s;
-}
-
-.cardResults h3 {
-  font-size: 1rem;
-  font-weight: 400;
-}
-
-.cardResults h2 {
-  font-weight: 400;
 }
 
 @media (max-width: 768px) {

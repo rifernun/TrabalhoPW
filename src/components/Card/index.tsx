@@ -1,4 +1,5 @@
 import { Header } from "../Header";
+import { Result } from "../Result";
 import styles from "./styles.module.css";
 
 type CardProps = {
@@ -15,13 +16,7 @@ export function Card({ children, imc, category }: CardProps) {
           <Header />
         </div>
         <div className={styles.cardBody}>{children}</div>
-        {imc && category && (
-          <div className={styles.cardResults}>
-            <h2>Resultados:</h2>
-            <h3>Seu imc é: {imc}</h3>
-            <h3>Classificação: {category}</h3>
-          </div>
-        )}
+        {imc && category && <Result imc={imc} category={category} />}
       </div>
     </>
   );
