@@ -26,8 +26,12 @@ function App() {
       setImcCategory("Peso normal");
     } else if (valorIMC >= 25 && valorIMC < 30) {
       setImcCategory("Sobrepeso");
+    } else if (valorIMC >= 30 && valorIMC < 35) {
+      setImcCategory("Obesidade grau 1");
+    } else if (valorIMC >= 35 && valorIMC < 40) {
+      setImcCategory("Obesidade grau 2");
     } else {
-      setImcCategory("Obesidade");
+      setImcCategory("Obesidade grau 3");
     }
   };
 
