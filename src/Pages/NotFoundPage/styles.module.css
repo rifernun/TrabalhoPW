@@ -1,0 +1,88 @@
+:root {
+  --bg: #0a0a14;
+  --surface: #121220;
+  --surface-light: #1a1a2e;
+  --text: #e6e6ff;
+  --text-secondary: #a0a0c0;
+  --accent: #00f7ff; /* ciano neon */
+  --accent-red: #ff4466;
+  --border: rgba(64, 150, 255, 0.12);
+  --glow: 0 0 15px rgba(0, 247, 255, 0.4);
+}
+
+.container {
+  font-family: "Space Grotesk", system-ui, sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem 1.5rem;
+}
+
+.card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 24px;
+  padding: 3rem 2.5rem;
+  width: 100%;
+  max-width: 560px;
+  backdrop-filter: blur(12px);
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.4);
+  text-align: center;
+}
+
+.errorCode {
+  font-size: 5rem;
+  font-weight: 800;
+  margin: 0 0 1.2rem;
+  background: linear-gradient(90deg, var(--accent), #7e57c2);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  line-height: 1;
+}
+
+.message {
+  color: var(--text-secondary);
+  font-size: 1.25rem;
+  margin-bottom: 2rem;
+  line-height: 1.5;
+}
+
+.homeButton {
+  background: linear-gradient(90deg, var(--accent), #00d1ff);
+  color: #000;
+  border: none;
+  border-radius: 16px;
+  padding: 1rem 2rem;
+  font-size: 1.15rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: var(--glow);
+  text-decoration: none;
+  display: inline-block;
+  width: auto;
+}
+
+.homeButton:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 0 20px rgba(0, 247, 255, 0.6);
+}
+
+/* RESPONSIVE */
+@media (max-width: 600px) {
+  .errorCode {
+    font-size: 4rem;
+  }
+
+  .card {
+    padding: 2rem 1.5rem;
+  }
+
+  .message {
+    font-size: 1.1rem;
+  }
+}
