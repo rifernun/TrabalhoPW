@@ -14,6 +14,12 @@ export function NavBar() {
         <Link to="/imc" className={styles.link}>
           Calcular IMC
         </Link>
+        <Link to="/login" className={styles.link}>
+          Login
+        </Link>
+        <Link to="/register" className={styles.link}>
+          Cadastrar-se
+        </Link>
       </div>
     </nav>
   );
